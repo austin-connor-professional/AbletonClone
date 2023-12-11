@@ -1,0 +1,136 @@
+.navbar-container {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 0.75px 1.5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.left-side-buttons {
+  display: flex;
+  align-content: space-between;
+  gap: 5px;
+  cursor: pointer;
+  width: 1200px;
+}
+
+.left-side-button {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* Added box-sizing to include padding and border in the element's total width and height */
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  display: inline-block; /* This will consider the padding in the width */
+  width: auto;
+}
+
+.try-live-for-free {
+  color: #0000ff;
+  font-size: 15px;
+  padding-right: 10px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 55px;
+}
+
+.action-button {
+  background-color: white;
+  border: none;
+  padding-right: 5px 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+}
+
+button:hover {
+  background-color: rgb(237, 237, 237);
+  border-radius: 5px;
+}
+
+button:active {
+  box-shadow: 0 2.5px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+.mobile-nav {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.mobile-logo {
+  margin-top: 10px;
+  padding-left: 100px;
+}
+
+.nav-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  gap: 25px;
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  position: relative;
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  border: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
+.popup-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%; /* Adjust as needed */
+  border: none;
+}
+
+.popup-button:hover {
+  background-color: rgb(237, 237, 237);
+  border-radius: 5px;
+}
+
+.popup-button:active {
+  box-shadow: 0 2.5px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
