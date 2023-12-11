@@ -1,0 +1,64 @@
+.two-buttons {
+  padding: 0 25px;
+  padding-top: 15px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* Added box-sizing to include padding and border in the element's total width and height */
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  display: inline-block; /* This will consider the padding in the width */
+  width: auto;
+}
+
+.selected-button {
+  color: #ff764d;
+}
+
+.call-to-action-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 20px;
+}
+
+.call-to-action-text {
+  padding-top: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-size: 23px;
+}
+
+.blue-text {
+  color: #0000ff;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .call-to-action-image {
+    width: 85%;
+  }
+  .two-buttons {
+    padding-top: -10px;
+    margin-top: -25px;
+    padding-bottom: 10px;
+  }
+  .call-to-action-text {
+    width: 65%;
+    padding-top: 15px;
+    font-size: 13px;
+  }
+  .sub-text {
+    font-size: 9px;
+  }
+}
