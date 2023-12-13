@@ -1,41 +1,44 @@
 import React from 'react';
 import '../../App.css';
 import './navbar.css';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 
 const NavbarMobile = (props) => {
+  // Function to render the expanded navigation menu
   const renderNavExpanded = () => {
+    const sideMenuStyle = props.isNavExpanded ? { transform: 'translateX(0)' } : {};
     return (
-      <Popup
-        open={props.isNavExpanded}
-        onClose={() => props.setIsNavExpanded(false)}
-        modal
-      >
-        {props.navTitles.map((title, index) => (
-          <button
-            key={index}
-            onClick={() => console.log(title)}
-            className='popup-button'
-          >
-            {title}
-          </button>
-        ))}
-        {props.actionTitles.map((title, index) => (
-          <button key={index} className='popup-button'>
-            {title}
-          </button>
-        ))}
-        <button
-          onClick={() => props.setIsNavExpanded(false)}
-          className='popup-button'
-        >
-          Close
+      <div className="tabOut" style={sideMenuStyle}>
+        <div className="menuButtons">
+         {props.navTitles.map((title, index) => {
+          return (
+            <button
+              onClick={() => console.log({ title })}
+              key={index}
+              className='regular-text left-side-button'
+            >
+              {title}
+            </button>
+          );
+        })}
+        <button className=' regular-text'>
+          Try Live for free
         </button>
-      </Popup>
+        {props.actionTitles.map((title, index) => {
+          return (
+            <button className='action-button' key={index}>
+              {title}
+            </button>
+          );
+        })}
+        <button className="closeButton" onClick={() => props.setIsNavExpanded(false)}>X</button>
+      </div>
+  </div>
+
     );
   };
 
+
+  // Function to render the mobile view with the hamburger icon
   const mobileView = () => {
     return (
       <div className='mobile-nav'>
@@ -53,6 +56,7 @@ const NavbarMobile = (props) => {
     );
   };
 
+  // Conditional rendering based on the state of the navigation menu
   return props.isNavExpanded ? renderNavExpanded() : mobileView();
 };
 
