@@ -1,0 +1,68 @@
+/* mainBody.css */
+.yellow-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding-right: 50px; /* Add padding to the right */
+}
+
+.yellow-box {
+    background-color: #fbffa7;
+    float: right;
+    width: 55%;
+    height: 600px;
+    z-index: 5;
+    position: relative;
+    margin-right: 50px; /* Adjust margin-right to 50px */
+}
+
+.blurred-image {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 350px;
+    z-index: 999;
+}
+
+.beat-image {
+    position: relative;
+    height: 400px; /* adjust the height as needed */
+    width: 400px; /* adjust the width as needed */
+    z-index: 1001;
+    margin-top: 100px; /* add margin-top to create space between the beat image and the yellow box */
+    margin-right: -70px; /* adjust the margin-right to control the overlap */
+    margin-left: 50px;
+}
+
+.body-text {
+    padding-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-size: 18px;
+  }
+
+p {    
+    font-size: 14px;
+  }
+
+.video-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+.video-image {
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.info-about-image {
+    position: relative;
+    margin-left: 29.5%;
+}
