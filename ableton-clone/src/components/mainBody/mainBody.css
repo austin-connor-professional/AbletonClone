@@ -64,5 +64,42 @@ p {
 
 .info-about-image {
     position: relative;
-    margin-left: 29.5%;
+    margin-left: 29.5%;  
+}
+
+.green-container {
+    padding-top: 50px;
+    display: flex;
+    padding-right: 50px; /* Add padding to the right */
+}
+
+.green-box {
+    background-color: #b6ffc0;
+    float: left;
+    width: 55%;
+    height: 700px;
+    z-index: 5;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.green-box img {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.collab-image {
+    position: relative;
+    height: 450px; /* adjust the height as needed */
+    width: 450px; /* adjust the width as needed */
+    z-index: 1001;
+    margin-top: 125px; /* add margin-top to create space between the beat image and the yellow box */
+    margin-right: 50px;
 }
